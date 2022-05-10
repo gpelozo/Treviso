@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOVO PLASTICOS</title>
+    <link rel="stylesheet" href="../Estilos/estilo.css" />
+    <link rel="shorcut icon" href="../images/logos/favicon.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="margenNav">
+                    <a href="../index.html">Inicio</a>                   
+                    <a href="#">Contacto</a>
+                    <form action="./db/idioma.php" method="get" enctype="multipart/form-data">
+                        <select title="Idioma" name="Idioma" placeholder="Idioma" >
+                            <option value="E">Español</option> 
+                            <option value="I">Inglés</option>
+                        </select> 
+                    </form> 
+                </li> 
+                <li class="leftNav">
+                    <a href="../index.html"><img src="../images/logos/logonovo.png" width="150px" alt="NOVO PLASTICOS"></a>
+                    <a href="./Productos.html">Productos</a>
+                    <a href="./PolimerosInyectables.html">Polimeros</a>
+                    <a href="./Nosotros.html">Nosotros</a>
+                </li>
+            </ul>           
+        </nav>             
+    </header>
+    <hr>
+    <main>
+        <section class="imgContacto--section">
+            <div class="textoAnclaje">
+                <h1>CONTACTO</h1>
+            </div>
+            <div class="textoAnclaje">
+                <h2>NOVO SERVICIOS esta a su disposición por consultas, información, pedidos, ofertas y mensajes en general.</h2>
+            </div>
+            <div>
+<!--formulario a traves de tabla, puede alivianarse-->
+                <form action="clientes.php" method="post" enctype="multipart/form-data">
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="nombre_apellido"></label> <input type="text" name="nombre_apellido" placeholder="Nombre y Apellido" />
+                            </td>
+                            <td>
+                                <label for="Profesión"></label> <input type="text" name="Profesión" placeholder="Empresa/Profesión" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="Dirección"></label> <input type="text" name="Dirección" placeholder="Dirección" />
+                            </td>
+                            <td>
+                                <label for="CP"></label> <input type="text" name="CP" placeholder="Código Postal" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="Localidad"></label> <input type="text" name="Localidad" placeholder="Localidad" />
+                            </td> 
+                            <td>
+                                <label for="Provincia"></label> <input type="text" name="Provincia" placeholder="Provincia" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="País"></label> <input type="text" name="País" placeholder="País" />
+                            </td>
+                            <td><label for="Teléfono"></label> <input type="text" name="Teléfono" placeholder="Teléfono" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="Email"></label> <input type="text" name="Email" placeholder="Email" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="Enviar"></label> <input type="submit" name="Enviar" value="Enviar" />
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </section>
+    </main>
+    <hr>
+    <footer>
+        <p>Copyright 2022 | Todos los derechos reservados. | novoplasticos.com</p>
+        <p> Novo Plásticos S.A. República de Cuba 337 | Mar Del Plata | Argentina</p>
+    </footer>
+</body>
+</html>
