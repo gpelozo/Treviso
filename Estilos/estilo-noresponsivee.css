@@ -1,0 +1,67 @@
+/* Aplicando tipografíasOK, estilo de listasOK, alineación de textosOK, color de fondoOK, imagen de fondoOK, paddingOK, marginsOK y bordersOK */
+nav {
+    background-color: rgb(123, 197,136);
+	width:100%;
+    font-family:Arial, Helvetica, sans-serif;
+}
+/* ubico los links, quito bullets, enlistados en linea, reseteando margen y distancia al borde */
+ul {
+    display:inline;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+/* quito el subrayado y le doy color blanco a los links */
+a {
+    text-decoration: none;
+    color: white;
+}
+/* ubico los links principales, letra de mayor fuente, abajo a la izquierda del nav */
+.leftNav {
+    font-size:30px;
+    text-align:left;
+}
+/* ubico los links complementarios, arriba a la derecha del nav */
+.margenNav {
+    float:right;
+    padding: 10px;
+    text-align: right;
+}
+/* se ubica una imagen, como fondo del div */
+section {
+    height:400px;
+    width: 100%;
+}
+/* genera un anclaje de fondo translucido, fondo blanco, alineacion de texto izquierda, fuente Arial */
+.textoAnclaje {
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: white;
+    opacity: 50%;
+    text-align:left;
+}
+/* fondo que cubra la seccion, sin repetirse*/
+section {
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+/* urls de las imagenes de fondo */
+.imgNovo {
+    background-image: url(../images/fabrica/cerca_1.jpeg);
+}
+.imgNosotros {
+    background-image: url(../images/fabrica/fachada.jpeg);
+    height: 600px;
+}
+.imgProductos {
+    background-image: url(../images/fabrica/testimo1.jpeg);
+    height: 1300px;
+}
+.imgPolimer {
+    background-image: url(../images/fabrica/polimers.jpeg);
+    height: 600px;
+}
+/* unica imagen que no necesita modificar el fondo */
+.imgContacto--section {
+    background-image: url(../images/fabrica/contactanos.jpeg);
+    background-size: auto;
+}
