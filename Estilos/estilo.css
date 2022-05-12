@@ -1,30 +1,309 @@
+@media screen and (min-width: 320px) {
+/* Reseteo CSS */ 
+* { 
+     padding: 0;
+     margin: 0;
+}
+/* aplicando grid layout 3 filas*/
 .container {
-    display: grid;
-    /* 2 columnas */
-   /* grid-template-columns: 300px 100px;
-    /* 2 filas */
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: 
-    "Nav"
-    "main"
-    "footer"
-   }
-.container__element1 {
-    grid-row: 1;
-    width: 100% ;
-    grid-area: Nav;
-    background-image: var(--image1);
-    background-color: rgb(123, 197, 136);
+        display: grid;
+        height: 100vh;
+        grid-template-rows:  0.5fr 3fr 0.5fr;
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer"
+}   
+        .containerH {
+            grid-row: 1;
+            width: 100% ;
+            grid-area: header;
+            background-color: rgb(123, 197, 136);
+        }
+        
+        .containerM {
+            grid-row: 2 ;
+            grid-area: main;
+            width: 100% ;
+            background-color: rgb(43, 167, 192);
+        }
+
+        .containerF {
+            grid-row: 3 ;
+            grid-area: footer;
+            width: 100% ;
+            background-color: rgb(160, 181, 164);
+        }
+    /*componentes en flexbox*/
+/* Aplicando tipografías, estilo de listas, alineación de textos, color de fondo, imagen de fondo, padding, margins y borders */
+/* ubico los links, quito bullets, enlistados en linea, reseteando margen y distancia al borde */
+/*menu desplegable*/
+nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
 }
-.container__element2 {
-    grid-row: 2 ;
-    grid-area: main;
-    background-image: var(--image2);
-    background-color: rgb(123, 197,136);
+img{
+    max-width: 30%;
 }
-.container__element3 {
-    grid-row: 3 ;
-    grid-area: footer;
-    background-image: var(--image3);
-    background-color: rgb(123, 197,136);
+.menu { 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content:space-between; 
+    align-items: center;
+}
+.menu li { 
+    font-size: 16px;
+     padding: 15px 5px;
+      white-space: nowrap;
+      list-style-type: none;
+} 
+.logo a, .toggle a { 
+    font-size: 20px;
+ } 
+
+.toggle { 
+     order: 1;
+} 
+
+.item { 
+     width: 100%;
+     
+    text-align: left;
+    order: 2;
+     display: none;
+} 
+.item.active { 
+    display: block;
+}
+/* quito el subrayado y le doy color blanco a los links */
+a {
+    text-decoration: none;
+    color: white;
+}
+/*animacion al pasar por encima con el cursor*/
+a:hover { 
+    text-decoration: underline;
+ } 
+.logo a:hover { 
+    text-decoration: none;
+ }
+/* se ubica una imagen, como fondo del div */
+main {
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+.mSection {
+    display: flex;
+    flex-flow: column nowrap ;
+    justify-content: space-between;
+    height:100%;
+    width: 100%;
+}
+/* genera un anclaje de fondo translucido, fondo blanco, alineacion de texto izquierda, fuente Arial */
+.mSectionText {
+    height: cover;
+    opacity: 50%;
+    background-color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align:left;
+}
+
+.mSection--f {
+    display: flex;
+    flex-flow: column nowrap ;
+    justify-content: center;
+    height:100%;
+    width: 100%;
+}
+
+.mSection--p {
+    display: flex;
+    flex-flow: column nowrap ;
+    justify-content: space-evenly;
+    height:100%;
+    width: 100%;
+}
+.productos {
+    display: flex;
+    flex-flow: column nowrap;
+}
+/* fondo que cubra la seccion, sin repetirse*/
+/* urls de las imagenes de fondo */
+.imgNovo {
+    background-image: url(../images/fabrica/cerca_1.jpeg);
+}
+.imgNosotros {
+    background-image: url(../images/fabrica/fachada.jpeg);
+    height: 600px;
+}
+.imgProductos {
+    background-image: url(../images/fabrica/testimo1.jpeg);
+}
+.imgPolimer {
+    background-image: url(../images/fabrica/polimers.jpeg);
+    height: 600px;
+}
+.imgContacto {
+    background-image: url(../images/fabrica/contactanos.jpeg);
+}
+
+}
+
+@media all and (min-width: 600px) { 
+    .menu { 
+        justify-content: center;
+    } 
+    .logo { 
+        flex: 1;
+    } 
+    .toggle { 
+        flex: 1;
+         text-align: right;
+    }
+    .item.button { 
+        width: auto; order: 1; display: block; } 
+    .toggle { 
+        order: 2; } 
+    .button.secondary { 
+        border: 0; } 
+    .button a {
+         padding: 7.5px 15px;
+        background: teal;
+        border: 1px #006d6d solid;
+         } 
+    .button.secondary a {
+         background: transparent;
+         } 
+    .button a:hover {
+         text-decoration: none;
+         } 
+    .button:not(.secondary) a:hover { 
+        background: #006d6d;
+        border-color: #005959;
+     } 
+    .button.secondary a:hover { 
+        color: #ddd; 
+    } 
+}
+
+@media screen and (min-width: 1024px) {
+/*grid layout*/    
+    .container {
+        display: grid;
+        height: 100vh;
+        grid-template-rows:  1fr 8fr 1fr;
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer"
+    }   
+        .containerH {
+            grid-row: 1;
+            width: 100% ;
+            grid-area: header;
+            background-color: rgb(123, 197, 136);
+        }
+        
+        .containerM {
+            grid-row: 2 ;
+            grid-area: main;
+            width: 100% ;
+            background-color: rgb(43, 167, 192);
+        }
+
+        .containerF {
+            grid-row: 3 ;
+            grid-area: footer;
+            width: 100% ;
+            background-color: rgb(160, 181, 164);
+        }
+    /*componentes en flexbox*/
+/* Aplicando tipografías, estilo de listas, alineación de textos, color de fondo, imagen de fondo, padding, margins y borders */
+.logo{
+    height: 50%;
+}
+img {
+    max-width: 20%;
+}
+.menu { 
+    display: flex;
+     flex-flow: row nowrap;
+     font-family:Arial, Helvetica, sans-serif;
+     list-style-type: none; 
+    } 
+.item {
+    display: block ;
+}
+.toggle {
+    display: none;
+}
+/* ubico los links, quito bullets, enlistados en linea, reseteando margen y distancia al borde */
+/* quito el subrayado y le doy color blanco a los links */
+a {
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+}
+/* ubico los links principales, letra de mayor fuente, abajo a la izquierda del nav */
+.leftNav {
+    font-size:small;
+}
+/* ubico los links complementarios, arriba a la derecha del nav */
+.margenNav {
+    font-size: small;
+    float:right;
+    padding: 10px;
+    text-align: right;
+}
+/* se ubica una imagen, como fondo del div */
+/* genera un anclaje de fondo translucido, fondo blanco, alineacion de texto izquierda, fuente Arial */
+main {
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+.mSection {
+    display: flex;
+    flex-flow: column nowrap ;
+    justify-content: space-between;
+    height:100%;
+    width: 100%;
+}
+.mSectionText {
+    height: cover;
+    opacity: 50%;
+    background-color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align:left;
+}
+
+.mSection--f {
+    display: flex;
+    flex-flow: column nowrap ;
+    justify-content: center;
+    height:100%;
+    width: 100%;
+}
+/* fondo que cubra la seccion, sin repetirse*/
+/* urls de las imagenes de fondo */
+.imgNovo {
+    background-image: url(../images/fabrica/cerca_1.jpeg);
+}
+.imgNosotros {
+    background-image: url(../images/fabrica/fachada.jpeg);
+    height: 600px;
+}
+.imgProductos {
+    background-image: url(../images/fabrica/testimo1.jpeg);
+    height: 1300px;
+}
+.imgPolimer {
+    background-image: url(../images/fabrica/polimers.jpeg);
+    height: 600px;
+}
+/* unica imagen que no necesita modificar el fondo */
+.imgContacto--section {
+    background-image: url(../images/fabrica/contactanos.jpeg);
+    background-size: auto;
+}
 }

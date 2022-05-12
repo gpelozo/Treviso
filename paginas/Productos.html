@@ -7,85 +7,84 @@
     <title>NOVO PLASTICOS</title>
     <link rel="stylesheet" href="../Estilos/estilo.css" />
     <link rel="shorcut icon" href="../images/logos/favicon.png">
+    <script src="https://kit.fontawesome.com/63f5e2c2b0.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="/js/menu.js"></script>
 </head>
 <body class="container">
-    <header>
+    <header class="containerH">
         <nav>
-            <ul>
-                <li class="margenNav">
-                    <a href="../index.html">Inicio</a>                   
-                    <a href="./Contacto.html">Contacto</a>
-                    <form action="./db/idioma.php" method="get" enctype="multipart/form-data">
+<!--logo-->
+            <div class="logo">
+                <a href="../index.html"><img src="../images/logos/logonovo.png" alt="NOVO PLASTICOS"></a>
+            </div>
+<!--menu desplegable-->
+            <ul class="menu">
+                <li class="toggle">
+                    <a href="#"> i<i class="fas fa-bars"></i></a>
+                </li>
+<!--links principales-->
+                <li class="item">
+                    <a href="../index.html">Inicio</a>
+                </li>
+                <li class="item">
+                    <a href="#">Productos</a>
+                </li>
+                <li class="item">
+                    <a href="PolimerosInyectables.html">Polimeros</a>
+                </li>
+                <li class="item">
+                    <a href="Nosotros.html">Nosotros</a>
+                </li>
+                <li class="item">
+                    <a href="Contacto.html">Contacto</a>
+                </li>
+                <li class="item">
+                    <form action="../db/idioma.php" method="get" enctype="multipart/form-data">
                         <select title="Idioma" name="Idioma" placeholder="Idioma" >
                             <option value="E">Español</option> 
                             <option value="I">Inglés</option>
-                        </select> 
+                        </select>
                     </form> 
                 </li> 
-                <li class="leftNav">
-                    <a href="../index.html"><img src="../images/logos/logonovo.png" width="150px" alt="NOVO PLASTICOS"></a>
-                    <a href="#">Productos</a>
-                    <a href="./PolimerosInyectables.html">Polimeros</a>
-                    <a href="./Nosotros.html">Nosotros</a>
-                </li>
             </ul>           
-        </nav>             
+         </nav>             
     </header>
     <hr>
-    <main>
-        <section class="grid">
-            <div class="textoAnclaje">
+    <main class="containerM">
+        <section class="mSection--p imgNosotros">
+            <div class="mSectionText">
                 <h1>PRODUCTOS</h1>
             </div>
-            <table>
-                <tr>
-                    <td>
-                        <img src="../images/productos/producto1.jpeg" alt="Cajon Alto">
-                    </td>
-                    <td>
-                        <img src="../images/productos/producto2.jpeg" alt="Cunita Ventilada">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <img src="../images/productos/producto4.jpeg" alt="1/2 Cajon">
-                    </td>
-                    <td>
-                        <img src="../images/productos/producto5.jpeg" alt="Canasto Multiuso">
-                    </td>
-                    <td>
-                        <img src="../images/productos/producto6.jpeg" alt="Bandeja">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <img src="../images/productos/producto7.jpeg" alt="Cunita Cerrada">
-                    </td>
-                    <td>
-                        <img src="../images/productos/producto8.jpeg" alt="Bandeja Pan">
-                    </td>
-                    <td>
-                        <img src="../images/productos/producto9.jpeg" alt="Cajon Pascualina">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <img src="../images/productos/producto10.jpeg" alt="Cajon Embonable">
-                    </td>
-                    <td>
-                        <img src="../images/productos/producto11.jpeg" alt="1/2 Cajon">
-                    </td>
-                    <td>
-                        <img src="../images/productos/producto12.jpeg" alt="1/2 Cajon Bajo">
-                    </td>
-                </tr>
-                </table>
+            <ul class="productos">
+                <li>
+                    <img src="../images/productos/producto1.jpeg" alt="Cajon Alto">
+                    <img src="../images/productos/producto2.jpeg" alt="Cunita Ventilada">
+                </li>
+                <li>
+                    <img src="../images/productos/producto4.jpeg" alt="1/2 Cajon">
+                    <img src="../images/productos/producto5.jpeg" alt="Canasto Multiuso">
+                    <img src="../images/productos/producto6.jpeg" alt="Bandeja">
+                </li>
+                <li>
+                    <img src="../images/productos/producto7.jpeg" alt="Cunita Cerrada">
+                    <img src="../images/productos/producto8.jpeg" alt="Bandeja Pan">
+                    <img src="../images/productos/producto9.jpeg" alt="Cajon Pascualina">
+                </li>
+                <li>
+                    <img src="../images/productos/producto10.jpeg" alt="Cajon Embonable">
+                    <img src="../images/productos/producto11.jpeg" alt="1/2 Cajon">
+                    <img src="../images/productos/producto12.jpeg" alt="1/2 Cajon Bajo">
+                </li>
+            </ul>
         </section>
     </main>
     <hr>
-    <footer>
-        <p>Copyright 2022 | Todos los derechos reservados. | novoplasticos.com</p>
-        <p> Novo Plásticos S.A. República de Cuba 337 | Mar Del Plata | Argentina</p>
+    <footer class="containerF mSection--f">
+        <p> Novo Plásticos S.A. | República de Cuba 337 </p>
+        <p> Mar Del Plata | Argentina</p>
+        <p>Copyright 2022 | Todos los derechos reservados.</p>
+        <p>novoplasticos.com</p>
     </footer>
 </body>
 </html>

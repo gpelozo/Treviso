@@ -7,38 +7,57 @@
     <title>NOVO PLASTICOS</title>
     <link rel="stylesheet" href="../Estilos/estilo.css" />
     <link rel="shorcut icon" href="../images/logos/favicon.png">
+    <script src="https://kit.fontawesome.com/63f5e2c2b0.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="/js/menu.js"></script>
 </head>
 <body class="container">
-    <header>
+    <header class="containerH">
         <nav>
-            <ul>
-                <li class="margenNav">
-                    <a href="../index.html">Inicio</a>                   
-                    <a href="./Contacto.html">Contacto</a>
+<!--logo-->
+            <div class="logo">
+                <a href="../index.html"><img src="../images/logos/logonovo.png" alt="NOVO PLASTICOS"></a>
+            </div>
+<!--menu desplegable-->
+            <ul class="menu">
+                <li class="toggle">
+                    <a href="#"> i<i class="fas fa-bars"></i></a>
+                </li>
+<!--links principales-->
+                <li class="item">
+                    <a href="../index.html">Inicio</a>
+                </li>
+                <li class="item">
+                    <a href="Productos.html">Productos</a>
+                </li>
+                <li class="item">
+                    <a href="PolimerosInyectables.html">Polimeros</a>
+                </li>
+                <li class="item">
+                    <a href="#">Nosotros</a>
+                </li>
+                <li class="item">
+                    <a href="Contacto.html">Contacto</a>
+                </li>
+                <li class="item">
                     <form action="../db/idioma.php" method="get" enctype="multipart/form-data">
                         <select title="Idioma" name="Idioma" placeholder="Idioma" >
                             <option value="E">Español</option> 
                             <option value="I">Inglés</option>
-                        </select> 
+                        </select>
                     </form> 
-                </li>
-                <li class="leftNav">
-                    <a href="../index.html"><img src="../images/logos/logonovo.png" width="150px" alt="NOVO PLASTICOS"></a>
-                    <a href="./Productos.html">Productos</a>
-                    <a href="./PolimerosInyectables.html">Polimeros</a>
-                    <a href="#">Nosotros</a>
                 </li> 
             </ul>           
-        </nav>             
+         </nav>             
     </header>
     <hr>
-    <main>
-        <section class="imgNosotros">
-            <div class="textoAnclaje">
+    <main class="containerM">
+        <section class="mSection imgNosotros">
+            <div class="mSectionText">
                 <h1>NOSOTROS</h1>
             </div>
             <table>
-                <td class="textoAnclaje">
+                <td class="mSectionText">
                     <p>Novo Plasticos es una empresa dedicada a la fabricación de productos plásticos para la industria en general, siendo la actividad pesquera su principal destino. La misma se encuantra en la ciudad de Mar Del Plata.</p>
                     <p>Se inicio en el año 2009 con la fabricación del cajon plástico que utilizan los barcos pesqueros, y con el correr de los años fue agregando nuevas máquinas y moldes para distintos sectores / industrias como avícola, cárnica, frutihortícola y usos generales.</p>
                     <p>Posee una planta de 3000 metros cuadrados y dentro de ella además de las máquinas inyectoras, tiene un sector de reciclaje de plásticos totalmente automatizado, de esta forma se asegura trabajar con materia prima recuperada de primera calidad, ya que se pone especial énfasis en todos los procesos como la separación de agentes externos (metales), lavado, secado, molienda y embolsado del material.</p>  
@@ -48,9 +67,11 @@
         </section>
     </main>
     <hr>
-    <footer>
-        <p>Copyright 2022 | Todos los derechos reservados. | novoplasticos.com</p>
-        <p> Novo Plásticos S.A. República de Cuba 337 | Mar Del Plata | Argentina</p>
+    <footer class="containerF mSection--f">
+        <p> Novo Plásticos S.A. | República de Cuba 337 </p>
+        <p> Mar Del Plata | Argentina</p>
+        <p>Copyright 2022 | Todos los derechos reservados.</p>
+        <p>novoplasticos.com</p>
     </footer>
 </body>
 </html>

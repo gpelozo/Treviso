@@ -8,50 +8,69 @@
     <title>NOVO PLASTICOS</title>
     <link rel="stylesheet" href="Estilos/estilo.css" />
     <link rel="shorcut icon" href="./images/logos/favicon.png">
+    <script src="https://kit.fontawesome.com/63f5e2c2b0.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="/js/menu.js"></script>
 </head>
 <!--lo que se ve--> 
 <body class="container">
-    <header class="container__element1">
+    <header class="containerH">
         <nav>
-            <ul>
-<!--links suplementarios-->
-                <li class="margenNav">
-                    <a href="#">Inicio</a>                   
+<!--logo-->
+            <div class="logo">
+                <a href="#"><img src="./images/logos/logonovo.png" alt="NOVO PLASTICOS"></a>
+            </div>
+<!--menu desplegable-->
+            <ul class="menu">
+                <li class="toggle">
+                    <a href="#"> i<i class="fas fa-bars"></i></a>
+                </li>
+<!--links principales-->
+                <li class="item">
+                    <a href="#">Inicio</a>
+                </li>
+                <li class="item">
+                    <a href="./paginas/Productos.html">Productos</a>
+                </li>
+                <li class="item">
+                    <a href="./paginas/PolimerosInyectables.html">Polimeros</a>
+                </li>
+                <li class="item">
+                    <a href="./paginas/Nosotros.html">Nosotros</a>
+                </li>
+                <li class="item">
                     <a href="./paginas/Contacto.html">Contacto</a>
+                </li>
+                <li class="item">
                     <form action="./db/idioma.php" method="get" enctype="multipart/form-data">
                         <select title="Idioma" name="Idioma" placeholder="Idioma" >
                             <option value="E">Español</option> 
                             <option value="I">Inglés</option>
-                        </select> 
+                        </select>
                     </form> 
                 </li> 
-<!--links principales-->
-                <li class="leftNav">
-                    <a href="#"><img src="./images/logos/logonovo.png" width="150px" alt="NOVO PLASTICOS"></a>
-                    <a href="./paginas/Productos.html">Productos</a>
-                    <a href="./paginas/PolimerosInyectables.html">Polimeros</a>
-                    <a href="./paginas/Nosotros.html">Nosotros</a>
-                </li>
             </ul>           
-        </nav>             
+        </nav>              
     </header>
     <hr>
 <!--seccion principal-->
-    <main class="container__element2">
-        <section class="pipi2">
-            <div class="textoAnclaje">
+    <main class="containerM main imgNovo">
+        <section class="mSection">
+            <div class="mSectionText">
                 <h1>NOVO PLASTICOS</h1>
             </div>
-            <div class="textoAnclaje">
+            <div class="mSectionText">
                 <p>Presentamos la nueva generación de cajones plásticos argentinos, reforzados para temperaturas extremas.</p>
             </div>
         </section>
     </main>
     <hr>
 <!--pie de pagina , cambiará en responsive-->
-    <footer class="container__element3">
-        <p>Copyright 2022 | Todos los derechos reservados. | novoplasticos.com</p>
-        <p> Novo Plásticos S.A. República de Cuba 337 | Mar Del Plata | Argentina</p>
+    <footer class="containerF mSection--f">
+        <p> Novo Plásticos S.A. | República de Cuba 337 </p>
+        <p> Mar Del Plata | Argentina</p>
+        <p>Copyright 2022 | Todos los derechos reservados.</p>
+        <p>novoplasticos.com</p>
     </footer>
 </body>
 </html>

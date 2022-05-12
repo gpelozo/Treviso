@@ -7,46 +7,67 @@
     <title>NOVO PLASTICOS</title>
     <link rel="stylesheet" href="../Estilos/estilo.css" />
     <link rel="shorcut icon" href="../images/logos/favicon.png">
+    <script src="https://kit.fontawesome.com/63f5e2c2b0.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="/js/menu.js"></script>
 </head>
 <body class="container">
-    <header>
+    <header class="containerH">
         <nav>
-            <ul>
-                <li class="margenNav">
-                    <a href="../index.html">Inicio</a>                   
-                    <a href="./Contacto.html">Contacto</a>
-                    <form action="./db/idioma.php" method="get" enctype="multipart/form-data">
+<!--logo-->
+            <div class="logo">
+                <a href="../index.html"><img src="../images/logos/logonovo.png" alt="NOVO PLASTICOS"></a>
+            </div>
+<!--menu desplegable-->
+            <ul class="menu">
+                <li class="toggle">
+                    <a href="#"> i<i class="fas fa-bars"></i></a>
+                </li>
+<!--links principales-->
+                <li class="item">
+                    <a href="../">Inicio</a>
+                </li>
+                <li class="item">
+                    <a href="Productos.html">Productos</a>
+                </li>
+                <li class="item">
+                    <a href="#">Polimeros</a>
+                </li>
+                <li class="item">
+                    <a href="Nosotros.html">Nosotros</a>
+                </li>
+                <li class="item">
+                    <a href="Contacto.html">Contacto</a>
+                </li>
+                <li class="item">
+                    <form action="../db/idioma.php" method="get" enctype="multipart/form-data">
                         <select title="Idioma" name="Idioma" placeholder="Idioma" >
                             <option value="E">Español</option> 
                             <option value="I">Inglés</option>
-                        </select> 
+                        </select>
                     </form> 
                 </li> 
-                <li class="leftNav">
-                    <a href="../index.html"><img src="../images/logos/logonovo.png" width="150px" alt="NOVO PLASTICOS"></a>
-                    <a href="./Productos.html">Productos</a>
-                    <a href="#">Polimeros</a>
-                    <a href="./Nosotros.html">Nosotros</a>
-                </li>
             </ul>           
-        </nav>             
+         </nav>             
     </header>
     <hr>
-    <main>
-        <section class="imgPolimer">
-            <div class="textoAnclaje">
+    <main class="containerM">
+        <section class="mSection imgPolimer">
+            <div class="mSectionText">
                 <h1>POLIMEROS INYECTABLES</h1>
             </div>
-            <div class="textoAnclaje">
+            <div class="mSectionText">
                <h4>Ventajas - Conducciones con HDPE</h4>
                 <p> Un sistema en polietileno ofrece una cantidad importante de ventajas sobre los sistemas convencionales:<br>-Pérdidas de carga por fricción mínimas<br>-No es atacada en ninguna forma por la corrosión<br>-Ausencia de sedimentos e incrustaciones en su interior<br>-Flexibilidad<br>-Elasticidad<br>-No mantiene deformaciones permanentes<br>-Peso reducido<br>-Longitudes mayores, lo cual reduce el número de uniones (menor costo) y reduce las posibilidades de fallas humanas en la instalación<br>-Fácil de transportar<br>-Larga vida útil<br>-Menor costo de adquisición e instalación<br>-Resistente a movimientos sísmicos<br>-Resistencia mecánica y ductilidad<br>-Resistente a bacterias y químicos<br>-El polietileno tiene también entre sus ventajas que es un producto reciclable, esto significa que puede ser utilizado por terceros para fabricar por ejemplo estibas plásticas, sillas ornamentales, macetas plásticas, etc.</p> 
             </div>  
         </section>
     </main>
     <hr>
-    <footer>
-        <p>Copyright 2022 | Todos los derechos reservados. | novoplasticos.com</p>
-        <p> Novo Plásticos S.A. República de Cuba 337 | Mar Del Plata | Argentina</p>
+    <footer class="containerF mSection--f">
+        <p> Novo Plásticos S.A. | República de Cuba 337 </p>
+        <p> Mar Del Plata | Argentina</p>
+        <p>Copyright 2022 | Todos los derechos reservados.</p>
+        <p>novoplasticos.com</p>
     </footer>
 </body>
 </html>
