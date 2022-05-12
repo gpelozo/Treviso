@@ -46,6 +46,10 @@ nav {
 img{
     max-width: 30%;
 }
+main {
+    background-repeat:no-repeat;
+    background-size: cover;
+}
 .menu { 
     display: flex; 
     flex-wrap: wrap; 
