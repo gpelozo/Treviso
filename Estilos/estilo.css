@@ -1,3 +1,4 @@
+/* Aplicando tipografías, estilo de listas, alineación de textos, color de fondo, imagen de fondo, padding, margins y borders */
 @media screen and (min-width: 320px) {
 /* Reseteo CSS */ 
 * { 
@@ -8,26 +9,31 @@
 .container {
         display: grid;
         height: 100vh;
-        grid-template-rows:  0.5fr 3fr 0.5fr;
+        grid-template-rows:  0.1fr 5fr 0.1fr;
         grid-template-areas: 
         "header"
         "main"
         "footer"
-}   
+} 
+/*header sticky */  
         .containerH {
+            position:-webkit-sticky;
+            position: sticky;
+            top: 0px;
             grid-row: 1;
             width: 100% ;
             grid-area: header;
             background-color: rgb(123, 197, 136);
+            z-index: 1;
         }
-        
+/*main */       
         .containerM {
             grid-row: 2 ;
             grid-area: main;
             width: 100% ;
-            background-color: rgb(43, 167, 192);
+            background-color: rgb(255, 255, 255);
         }
-
+/*pie de pagina */
         .containerF {
             grid-row: 3 ;
             grid-area: footer;
@@ -35,75 +41,109 @@
             background-color: rgb(160, 181, 164);
         }
     /*componentes en flexbox*/
-/* Aplicando tipografías, estilo de listas, alineación de textos, color de fondo, imagen de fondo, padding, margins y borders */
-/* ubico los links, quito bullets, enlistados en linea, reseteando margen y distancia al borde */
-/*menu desplegable*/
+/* disposición logo e icono hamburguesa */
 nav {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-around;
+    justify-content:space-between;
 }
+/*tamaño logo*/
 img{
-    max-width: 30%;
+    min-width: 20%;
+    max-width: 20%;
 }
+/*imagen de fondo cubritiva*/
 main {
     background-repeat:no-repeat;
-    background-size: cover;
+    background-size:auto;
 }
-.menu { 
-    display: flex; 
-    flex-wrap: wrap; 
-    justify-content:space-between; 
-    align-items: center;
+/**/
+/*icono hamburguesa*/
+.hamburguesa {
+  display:list-item;
+  align-content:space-between;
+  border: none;
+  cursor: pointer;
+  list-style-type: none;
 }
-.menu li { 
-    font-size: 16px;
-     padding: 15px 5px;
-      white-space: nowrap;
-      list-style-type: none;
-} 
-.logo a, .toggle a { 
-    font-size: 20px;
- } 
+/* composicion boton hamburguesa*/
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: rgb(255, 255, 255);
+  margin: 6px 0;
+  transition: 0.4s;
+}
 
-.toggle { 
-     order: 1;
-} 
-
-.item { 
-     width: 100%;
-     
-    text-align: left;
-    order: 2;
-     display: none;
-} 
-.item.active { 
-    display: block;
+/* Rotado primera barra */
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+  transform: rotate(-45deg) translate(-9px, 6px) ;
 }
+
+/* Se desvanece la segunda barra */
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotado tercera barra */
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+  transform: rotate(45deg) translate(-8px, -8px) ;
+}
+/**/
+/**/
+
+/* necesario para posicionar el menu desplegable */
+.dropdown {
+  position: relative;
+  display: block;
+  align-items: center;
+  padding-top: 4vw;
+  padding-right: 20px;
+}
+/* menu desplegable, posicion absoluta con medidas relativas para facil escalado, centrado de links*/
+.dropdown-content {
+  display: none;
+  position:absolute;
+  right: 0vw;
+  top:100%;
+  width: 100vw;
+  text-align: center;
+  flex-flow: column nowrap;
+  background-color: rgb(123, 197, 136);
+  box-shadow: 0px 8px 0px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+/* mostrar el menu ( se usa JS para agregar esta variable al .dropdown-content cuando el usuario haga click en el boton hamburguesa) */
+.show {
+  display:flex;
+}
+
 /* quito el subrayado y le doy color blanco a los links */
 a {
     text-decoration: none;
     color: white;
+    font-family:Arial, Helvetica, sans-serif;
 }
 /*animacion al pasar por encima con el cursor*/
 a:hover { 
     text-decoration: underline;
  } 
-.logo a:hover { 
-    text-decoration: none;
- }
+
+ /**//**//**/
+ /**//**//**/
 /* flex para titulo y anclaje */
 .mSection {
     display: flex;
     flex-flow: column nowrap ;
-    justify-content: space-between;
     height:100%;
     width: 100%;
 }
 /* genera un anclaje de fondo translucido, fondo blanco, alineacion de texto izquierda, fuente Arial */
 .mSectionText {
     height: cover;
-    opacity: 50%;
+    opacity: 80%;
     background-color: white;
     font-family:Arial, Helvetica, sans-serif;
     text-align:left;
@@ -124,6 +164,7 @@ a:hover {
     height:100%;
     width: 100%;
 }
+/*listado vertical de a 3 objetos*/
 .productos {
     display: flex;
     flex-flow: column nowrap;
@@ -131,141 +172,68 @@ a:hover {
 /* urls de las imagenes de fondo */
 .imgNovo {
     background-image: url(../images/fabrica/cerca_1.jpeg);
+    
 }
 .imgNosotros {
     background-image: url(../images/fabrica/fachada.jpeg);
+    max-width: 100%;
 }
 .imgProductos {
     background-image: url(../images/fabrica/testimo1.jpeg);
+    max-width: 100%;
 }
 .imgPolimer {
     background-image: url(../images/fabrica/polimers.jpeg);
+    max-width: 100%;
 }
 .imgContacto {
     background-image: url(../images/fabrica/contactanos.jpeg);
+    max-width: 100%;
 }
 
 }
 
 @media screen and (min-width: 1024px) {
-/*grid layout*/    
-    .container {
-        display: grid;
-        height: 100vh;
-        grid-template-rows:  1fr 8fr 1fr;
-        grid-template-areas: 
-        "header"
-        "main"
-        "footer"
-    }   
-        .containerH {
-            grid-row: 1;
-            width: 100% ;
-            grid-area: header;
-            background-color: rgb(123, 197, 136);
-        }
-        
-        .containerM {
-            grid-row: 2 ;
-            grid-area: main;
-            width: 100% ;
-            background-color: rgb(43, 167, 192);
-        }
-
-        .containerF {
-            grid-row: 3 ;
-            grid-area: footer;
-            width: 100% ;
-            background-color: rgb(160, 181, 164);
-        }
+/*reseteando margen y distancia al borde */
+  * { 
+    padding: 0;
+    margin: 0;
+}
+/*grid layout*/          
     /*componentes en flexbox*/
 /* Aplicando tipografías, estilo de listas, alineación de textos, color de fondo, imagen de fondo, padding, margins y borders */
-.logo{
-    height: 50%;
+/*desaparece el icono*/
+.hamburguesa {
+  display: none;
 }
-img {
-    max-width: 20%;
+/*div hamburguesa*/
+.dropdown{
+  width:10vw;
+  align-content:space-between;
 }
-.menu { 
-    display: flex;
-     flex-flow: row nowrap;
-     font-family:Arial, Helvetica, sans-serif;
-     list-style-type: none; 
-    } 
-.item {
-    display: block ;
+/*menu desplegable reformateado a horizontal*/
+/* flex, ubico los links, quito bullets, enlistados en linea*/
+.dropdown-content {
+  display: flex;
+  position:fixed;
+  top:6vh;
+  width: 70vw;
+  right:1vw;
+  flex-flow: row nowrap;
+  box-shadow: none;
+  z-index: 0;
+  justify-content: space-between;
 }
-.toggle {
-    display: none;
-}
-/* ubico los links, quito bullets, enlistados en linea, reseteando margen y distancia al borde */
-/* quito el subrayado y le doy color blanco a los links */
+/* quito el subrayado y le doy fuente Arial, grande, y color blanco a los links */
 a {
+    font-family:Arial, Helvetica, sans-serif;
     text-decoration: none;
     color: white;
     font-size: larger;
 }
-/* ubico los links principales, letra de mayor fuente, abajo a la izquierda del nav */
-.leftNav {
-    font-size:small;
-}
-/* ubico los links complementarios, arriba a la derecha del nav */
-.margenNav {
-    font-size: small;
-    float:right;
-    padding: 10px;
-    text-align: right;
-}
 /* se ubica una imagen, como fondo del div */
-/* genera un anclaje de fondo translucido, fondo blanco, alineacion de texto izquierda, fuente Arial */
 main {
     background-repeat:no-repeat;
-    background-size: cover;
-}
-.mSection {
-    display: flex;
-    flex-flow: column nowrap ;
-    justify-content: space-between;
-    height:100%;
-    width: 100%;
-}
-.mSectionText {
-    height: cover;
-    opacity: 50%;
-    background-color: white;
-    font-family:Arial, Helvetica, sans-serif;
-    text-align:left;
-}
-/*flex footer */
-.mSection--f {
-    display: flex;
-    flex-flow: column nowrap ;
-    justify-content: center;
-    height:100%;
-    width: 100%;
-}
-/*flex productos */
-.mSection--p {
-    display: flex;
-    flex-flow: column nowrap ;
-    justify-content: space-evenly;
-    height:100%;
-    width: 100%;
-}
-/* urls de las imagenes de fondo */
-.imgNovo {
-    background-image: url(../images/fabrica/cerca_1.jpeg);
-}
-.imgNosotros {
-    background-image: url(../images/fabrica/fachada.jpeg);
-}
-.imgProductos {
-    background-image: url(../images/fabrica/testimo1.jpeg);
-}
-.imgPolimer {
-    background-image: url(../images/fabrica/polimers.jpeg);
-}
-.imgContacto {
-    background-image: url(../images/fabrica/contactanos.jpeg);
+    background-size:cover;
 }
 }
