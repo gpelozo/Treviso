@@ -7,16 +7,13 @@ function myFunction(x) {
 //esto sirve para cerrar el menu si el usuario hace click fuera del menu desplegable
 window.onclick = function(event) {
 
-  if (!event.target.matches('.hamburguesa')) {
+  if (!event.target.matches('hamburguesa')) {
     var dropdowns = document.getElementsByClassName("dropdown-content");
     var i;
     for (i = 0; i < dropdowns.length; i++) {
       var openDropdown = dropdowns[i];
       if (openDropdown.classList.contains('show')) {
         openDropdown.classList.remove('show');
-      }
-      if (openDrowdown.class.List.contains('change')) {
-        openDrowdown.classList.remove('change');
       }
     }
   }

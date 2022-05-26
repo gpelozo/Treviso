@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
+<!--lo que no se ve--> 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NOVO PLASTICOS</title>
-    <link rel="stylesheet" href="../css/estilo.css" />
-    <link rel="shorcut icon" href="../images/logos/favicon.png">
+    <link rel="stylesheet" href="./css/estilo.css" />
+    <link rel="shorcut icon" href="./images/logos/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <script src="./js/menu.js"></script>
 </head>
+<!--lo que se ve--> 
 <body class="container-fluid">
     <header class="row">
         <nav class="navbar navbar-expand-lg bg-success">
             <div class="container-fluid">
 <!--logo-->
                 <div class="col-2 col-lg-2 animate__animated animate__fadeInDown">
-                    <a class="navbar-brand" href="#"><img class="img-fluid w-50" src="../images/logos/logonovo.png" alt="NOVO PLASTICOS"></a>
+                    <a class="navbar-brand" href="#"><img class="img-fluid w-75" src="../images/logos/logonovo.png" alt="NOVO PLASTICOS"></a>
                 </div>
                 <!--boton hamburguesa-->
                 <button class="col-1 navbar-toggler animate__animated animate__fadeInRight" type="button" data-bs-toggle="collapse" data-bs-target="#menuHamburguesa" aria-controls="menuHamburguesa" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,48 +27,55 @@
                 </button>
 <!--menu desplegable-->
                 <div class="offset-lg-3 collapse navbar-collapse align-self-end" id="menuHamburguesa">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-4">
-                        <li class="nav-item align-self-center">
-                            <a class="nav-link text-white" aria-current="page" href="../index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item align-self-center">
-                            <a class="nav-link text-white" href="./Productos.html">Productos</a>
-                        </li>
-                        <li class="nav-item align-self-center">
-                            <a class="nav-link active text-white" href="#">Polimeros</a>
-                        </li>
-                        <li class="nav-item align-self-center">
-                            <a class="nav-link text-white" href="./Nosotros.html">Nosotros</a>
-                        </li>
-                        <li class="nav-item align-self-center">
-                            <a class="nav-link text-white" href="./Contacto.html">Contacto</a>
-                        </li>
-                        <li class="nav-item align-self-center">
+                    <div class="navbar-nav me-auto mb-2 mb-lg-0 fs-4">
+                        <div class="nav-item align-self-center">
+                            <a class="nav-link active text-white" aria-current="page" href="#">Inicio</a>
+                        </div>
+                        <div class="nav-item align-self-center">
+                            <a class="nav-link text-white" href="./paginas/Productos.html">Productos</a>
+                        </div>
+                        <div class="nav-item align-self-center">
+                            <a class="nav-link text-white" href="./paginas/PolimerosInyectables.html">Polimeros</a>
+                        </div>
+                        <div class="nav-item align-self-center">
+                            <a class="nav-link text-white" href="./paginas/Nosotros.html">Nosotros</a>
+                        </div>
+                        <div class="nav-item align-self-center">
+                            <a class="nav-link text-white" href="./paginas/Contacto.html">Contacto</a>
+                        </div>
+                        <div class="nav-item align-self-center">
                             <form action="./db/idioma.php" method="get" enctype="multipart/form-data">
                                 <select title="Idioma" name="Idioma" placeholder="Idioma" >
                                     <option value="E">Español</option> 
                                     <option value="I">English</option>
                                 </select>
                             </form>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>
     </header>
-    <hr>
-    <main class="imgPolimer">
-        <section class="mSection">
-            <div class="mSectionText">
-                <h1>POLIMEROS INYECTABLES</h1>
+<hr>
+<!--seccion principal-->
+    <main class="container bg-danger animate__animated animate__fadeIn">
+        <section>
+            <div class="row">
+                <h1 class="h2">NOVO PLASTICOS</h1>
             </div>
             <div class="mSectionText">
-               <h4>Ventajas - Conducciones con HDPE</h4>
-                <p> Un sistema en polietileno ofrece una cantidad importante de ventajas sobre los sistemas convencionales:<br>-Pérdidas de carga por fricción mínimas<br>-No es atacada en ninguna forma por la corrosión<br>-Ausencia de sedimentos e incrustaciones en su interior<br>-Flexibilidad<br>-Elasticidad<br>-No mantiene deformaciones permanentes<br>-Peso reducido<br>-Longitudes mayores, lo cual reduce el número de uniones (menor costo) y reduce las posibilidades de fallas humanas en la instalación<br>-Fácil de transportar<br>-Larga vida útil<br>-Menor costo de adquisición e instalación<br>-Resistente a movimientos sísmicos<br>-Resistencia mecánica y ductilidad<br>-Resistente a bacterias y químicos<br>-El polietileno tiene también entre sus ventajas que es un producto reciclable, esto significa que puede ser utilizado por terceros para fabricar por ejemplo estibas plásticas, sillas ornamentales, macetas plásticas, etc.</p> 
-            </div>  
+                <p class="lead">Presentamos la nueva generación de cajones plásticos argentinos, reforzados para temperaturas extremas.</p>
+            </div>
+        </section>
+        <section>
+
+        </section>
+        <section>
+
         </section>
     </main>
     <hr>
+<!--pie de pagina , cambió en bootstrap-->
     <footer class="container">
         <div class="container-fluid">
             <div class="row">
