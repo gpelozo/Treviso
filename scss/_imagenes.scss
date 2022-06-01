@@ -1,0 +1,23 @@
+/* urls de las imagenes de fondo */
+    .imgNovo {
+    background-image: url(../images/fabrica/cerca_1.jpeg);
+    max-height: $vw;
+    max-width: $full;
+    }
+    .imgNosotros {
+    background-image: url(../images/fabrica/fachada.jpeg);
+    max-width: $full;
+    }
+    .imgProductos {
+    background-image: url(../images/fabrica/testimo1.jpeg);
+    max-width: $full;
+    }
+    .imgPolimer {
+    background-image: url(../images/fabrica/polimers.jpeg);
+    max-width: $full;
+    }
+    .imgContacto {
+    background-image: url(../images/fabrica/contactanos.jpeg);
+    max-width: $full;
+    background-repeat: no-repeat;
+    }

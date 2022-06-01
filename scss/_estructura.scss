@@ -1,0 +1,31 @@
+/* flex para titulo y anclaje */
+.mSection {
+    height:70vh;
+    width: $vw;
+  }
+  /* genera un anclaje de fondo translucido, fondo blanco, alineacion de texto izquierda, fuente Arial */
+  .mSectionText {
+    height: cover;
+    opacity: 80%;
+    background-color: $white;
+    font-family:$font-novo;
+    text-align:left;
+  }
+  /*flex footer*/
+  .mSection--f {
+    display: $f;
+    flex-flow: $col-nowr ;
+    justify-content: center;
+    height:$full;
+    width: $full;
+  
+  /*flex productos */
+      .p {
+    justify-content: space-evenly;
+      }
+  }
+  /*listado vertical de a 3 objetos*/
+  .productos {
+    display: $f;
+    flex-flow: $col-nowr;
+  }
