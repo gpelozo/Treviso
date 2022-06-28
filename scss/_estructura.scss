@@ -19,13 +19,41 @@
     height:$full;
     width: $full;
   
-  /*flex productos */
-      .p {
-    justify-content: space-evenly;
-      }
-  }
-  /*listado vertical de a 3 objetos*/
-  .productos {
-    display: $f;
-    flex-flow: $col-nowr;
-  }
+/*flex productos */
+    .p {
+  justify-content: space-evenly;
+    }
+}
+/*listado vertical de a 3 objetos*/
+.productos {
+  display: $f;
+  flex-flow: $col-nowr;
+}
+.centrado {
+  height: 100vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.hidden {
+  overflow:hidden;
+}
+.containerServicio {
+  position: relative;
+  width: 100%;
+}
+.text {
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.navi {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.729);
+}

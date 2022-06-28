@@ -11,22 +11,30 @@
     <link rel="shorcut icon" href="../images/logos/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/63f5e2c2b0.js" crossorigin="anonymous"></script>
     <script src="./js/menu.js"></script>
 </head>
-<body class="container-fluid">
-    <header class="row">
-        <nav class="navbar navbar-expand-lg bg-success">
+<body class="hidden container-fluid">
+    <div class="centrado" id="onload">
+        <div class="loadingio-spinner-rolling-v9iovy66pyj">
+            <div class="ldio-46nhicw2h1x">
+            <div></div>
+            </div>
+        </div>
+        </div>
+    <header class="row sticky-top">
+        <nav class="navi navbar navbar-expand-lg bg-success">
             <div class="container-fluid">
 <!--logo-->
-                <div class="col-2 col-lg-2 animate__animated animate__fadeInDown">
+                <div class="col-2 col-lg-2 animate__animated animate__fadeInLeft">
                     <a class="navbar-brand" href="../index.html"><img class="img-fluid w-50" src="../images/logos/logonovo.png" alt="NOVO PLASTICOS"></a>
                 </div>
                 <!--boton hamburguesa-->
-                <button class="col-1 navbar-toggler animate__animated animate__fadeInRight" type="button" data-bs-toggle="collapse" data-bs-target="#menuHamburguesa" aria-controls="menuHamburguesa" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler animate__animated animate__fadeInRight" type="button" data-bs-toggle="collapse" data-bs-target="#menuHamburguesa" aria-controls="menuHamburguesa" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 <!--menu desplegable-->
-                <div class="offset-lg-3 collapse navbar-collapse align-self-end" id="menuHamburguesa">
+                <div class="offset-lg-2 offset-xl-3 offset-xxl-4 collapse navbar-collapse align-self-end" id="menuHamburguesa">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-4">
                         <li class="nav-item align-self-center">
                             <a class="nav-link text-white" aria-current="page" href="../index.html">Inicio</a>
@@ -58,21 +66,61 @@
     </header>
     <hr>
     <main class="imgPolimer animate__animated animate__fadeIn">
-        <section class="mSection">
+        <section class="row">
             <div class="mSectionText">
                 <h1>POLIMEROS INYECTABLES</h1>
             </div>
-            <div class="mSectionText">
-               <h4>Ventajas - Conducciones con HDPE</h4>
-                <p> Un sistema en polietileno ofrece una cantidad importante de ventajas sobre los sistemas convencionales:<br>-Pérdidas de carga por fricción mínimas<br>-No es atacada en ninguna forma por la corrosión<br>-Ausencia de sedimentos e incrustaciones en su interior<br>-Flexibilidad<br>-Elasticidad<br>-No mantiene deformaciones permanentes<br>-Peso reducido<br>-Longitudes mayores, lo cual reduce el número de uniones (menor costo) y reduce las posibilidades de fallas humanas en la instalación<br>-Fácil de transportar<br>-Larga vida útil<br>-Menor costo de adquisición e instalación<br>-Resistente a movimientos sísmicos<br>-Resistencia mecánica y ductilidad<br>-Resistente a bacterias y químicos<br>-El polietileno tiene también entre sus ventajas que es un producto reciclable, esto significa que puede ser utilizado por terceros para fabricar por ejemplo estibas plásticas, sillas ornamentales, macetas plásticas, etc.</p> 
+            <nav aria-label="breadcrumb">
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">POLIMEROS INYECTABLES</li>
+                </ul>
+            </nav>
+            <div class="row mSectionText">
+                <div class="col-12">
+                    <h4>Ventajas - Conducciones con HDPE</h4>
+                    <p> Un sistema en polietileno ofrece una cantidad importante de ventajas sobre los sistemas convencionales:</p>
+                </div>
+                <div class="col-6">
+                    <p>-Pérdidas de carga por fricción mínimas</p>
+                    <p>-No es atacada en ninguna forma por la corrosión</p>
+                    <p>-Ausencia de sedimentos e incrustaciones en su interior</p>
+                    <p>-Flexibilidad</p>
+                    <p>-Elasticidad</p>
+                    <p>-No mantiene deformaciones permanentes</p>
+                    <p>-Peso reducido<br>-Longitudes mayores, lo cual reduce el número de uniones (menor costo) y reduce las posibilidades de fallas humanas en la instalación</p>
+                </div>
+                <div class="col-6">
+                    <p>-Fácil de transportar</p>
+                    <p>-Larga vida útil</p>
+                    <p>-Menor costo de adquisición e instalación</p>
+                    <p>-Resistente a movimientos sísmicos</p>
+                    <p>-Resistencia mecánica y ductilidad</p>
+                    <p>-Resistente a bacterias y químicos</p>
+                    <p>-El polietileno tiene también entre sus ventajas que es un producto reciclable, esto significa que puede ser utilizado por terceros para fabricar por ejemplo estibas plásticas, sillas ornamentales, macetas plásticas, etc.</p> 
+                </div>
             </div>  
+        </section>
+        <section class=" row about-us">
+            <div class="container">
+                <div class="row">
+                    <div class="row mSectionText">
+                        <h2>CALIDAD</h2>
+                    <p>Todos nuestros productos poseen un aditivo para el mejoramiento de la calidad del mismo, con un porcentaje que varía del 2% al 5%, dependiendo el requerimiento del cliente y el producto, logrando así una duración superior de este.</p>
+                        <p> Constantemente se realizan acciones de control de seguridad e higiene de las instalaciones , cada área de los operadores es verificada y puesta a punto para un trabajo más eficiente y mejorar en todo momento…</p>                          
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="row">
+            <iframe width="100%" height="500" src="https://www.youtube.com/embed/8FXT7XrlP4M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </section>
     </main>
     <hr>
-    <footer class="container">
+    <footer class="row">
         <div class="container-fluid">
             <div class="row">
-                <div class="col">
+                <div class="col-xl-4 col-lg-4 col-md-3 col-sm-6 col-12">
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item h2">UBICACION</li>
                         <li class="list-group-item">Novo Plásticos S.A. | República de Cuba 337</li>
@@ -81,7 +129,7 @@
                         <li class="list-group-item">novoplasticos.com</li>
                     </ul>
                 </div>
-                <div class="col">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item h2">HORARIOS DE ATENCION</li>
                         <li class="list-group-item">Brindamos un asesoramiento constante, no dude en consultarnos.</li>
@@ -90,10 +138,35 @@
                         <li class="list-group-item">Domingos: Cerrado</li>
                     </ul>
                 </div>
+                <div class="col-xl-4 col-lg-4 col-md-3 col-sm-6 col-12">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item h2">CONTÁCTENOS</li>
+                        <li class="list-group-item"><i class="fa-solid fa-mobile-screen"></i> +54 223 5714974</li>
+                        <li class="list-group-item"><i class="fa-solid fa-mobile-screen"></i> +54 223 3519259</li>
+                        <li class="list-group-item"><i class="fa-solid fa-envelope"></i> novoserviciosmdp@gmail.com</li>
+                        <li class="list-group-item"><i class="fa-solid fa-location-dot"></i> Mar del Plata, Buenos Aires, CP 7600</li>
+                    </ul>
+                </div>
             </div>
         </div>
+        <nav class="bg-secondary">
+            <div class="row">
+                <div class="align-self-end col-6">
+                    <p>Todos los derechos © 2022 NOVO Plásticos - Design by <a href="https://www.linkedin.com/in/gonzalo-ian-pelozo-776926162/" class="text-warning">Gonzalo Ian Pelozo</a></p>
+                </div>
+                <nav class="col-6 navbar navbar-expand-lg">
+                    <ul class="offset-lg-7 navbar-nav me-auto mb-2 mb-lg-0 fs-6">
+                        <li class="nav-item align-self-start"><a class="nav-link text-white" href="./Nosotros.html">Novo</a></li>
+                        <li class="nav-item align-self-start"><a class="nav-link text-white" href="./Productos.html">Productos</a></li>
+                        <li class="nav-item align-self-start"><a class="nav-link text-white" href="./Contacto.html">Contacto</a></li>
+                        <li class="nav-item align-self-start"><a class="nav-link text-white" href="../index.html#rse">RSE</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </nav>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../js/loading.js"></script>
 </body>
 </html>

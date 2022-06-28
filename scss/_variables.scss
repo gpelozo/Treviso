@@ -1,9 +1,10 @@
 /*variables*/
 $white:rgb(255, 255, 255);
 $col-nowr:column nowrap;
-$full:100%;
+$full:100vw;
 $f:flex;
 $change:rotate(45deg) translate(-8px, -8px);
 $change0:rotate(-45deg) translate(-9px, 6px);
-$vw:100vh;
+$vw:100vw;
 $font-novo:Arial, Helvetica, sans-serif;
+$vh:100vh;

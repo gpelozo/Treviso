@@ -4,29 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="486-2348 - Comunicate con nosotros! NOVO PLASTICOS S.A. - Republica de cuba 337">
+    <meta name="description" content="486-2348 - Comunicate con nosotros! NOVO PLASTICOS S.A. - Republica de Cuba 337">
     <meta name="keywords" content="email direccion telefono codigo postal ubicacion localidad mar del plata mdp">
     <title>NOVO PLASTICOS</title>
     <link rel="stylesheet" href="../css/estilo.css" />
     <link rel="shorcut icon" href="../images/logos/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <script src="https://kit.fontawesome.com/63f5e2c2b0.js" crossorigin="anonymous"></script>
     <script src="./js/menu.js"></script>
 </head>
-<body class="container-fluid">
-    <header class="row">
-        <nav class="navbar navbar-expand-lg bg-success">
+<body class="hidden container-fluid">
+    <div class="centrado" id="onload">
+        <div class="loadingio-spinner-rolling-v9iovy66pyj">
+            <div class="ldio-46nhicw2h1x">
+            <div></div>
+            </div>
+        </div>
+        </div>
+    <header class="row sticky-top">
+        <nav class="navi navbar navbar-expand-lg bg-success">
             <div class="container-fluid">
 <!--logo-->
-                <div class="col-2 col-lg-2 animate__animated animate__fadeInDown">
+                <div class="col-2 col-lg-2 animate__animated animate__fadeInLeft">
                     <a class="navbar-brand" href="../index.html"><img class="img-fluid w-50" src="../images/logos/logonovo.png" alt="NOVO PLASTICOS"></a>
                 </div>
                 <!--boton hamburguesa-->
-                <button class="col-1 navbar-toggler animate__animated animate__fadeInRight" type="button" data-bs-toggle="collapse" data-bs-target="#menuHamburguesa" aria-controls="menuHamburguesa" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler animate__animated animate__fadeInRight" type="button" data-bs-toggle="collapse" data-bs-target="#menuHamburguesa" aria-controls="menuHamburguesa" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 <!--menu desplegable-->
-                <div class="offset-lg-3 collapse navbar-collapse align-self-end" id="menuHamburguesa">
+                <div class="offset-lg-2 offset-xl-3 offset-xxl-4 collapse navbar-collapse align-self-end" id="menuHamburguesa">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-4">
                         <li class="nav-item align-self-center">
                             <a class="nav-link text-white" aria-current="page" href="../index.html">Inicio</a>
@@ -57,90 +66,102 @@
         </nav>
     </header>
     <hr>
-    <main class="containerM imgContacto animate__animated animate__fadeIn">
-        <section class="mSection">
-            <div class="mSectionText">
+    <main class="animate__animated animate__fadeIn">
+ <!--Google mapa-->
+        <section class="row">
+            <div id="map-container-google-2" class="map-container"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3143.4451356862314!2d-57.58671788447893!3d-38.013400853266425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584dec5005dbd6b%3A0x4cea84afb714e5be!2sNovo%20Pl%C3%A1sticos%20-%20Inyeccion%20Cajones%20Plasticos!5e0!3m2!1sen!2sus!4v1656201819729!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+        <section class="row">
+            <div>
                 <h1>CONTACTO</h1>
             </div>
-            <div>
-<!--formulario a traves de tabla, puede alivianarse-->
-                <form action="../db/clientes.php" method="post" enctype="multipart/form-data">
-                    <table>
-                        <tr>
-                            <td>
-                                <label for="nombre_apellido"></label> <input type="text" name="nombre_apellido" placeholder="Nombre y Apellido" />
-                            </td>
-                            <td>
-                                <label for="Profesión"></label> <input type="text" name="Profesión" placeholder="Empresa/Profesión" />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="Dirección"></label> <input type="text" name="Dirección" placeholder="Dirección" />
-                            </td>
-                            <td>
-                                <label for="CP"></label> <input type="text" name="CP" placeholder="Código Postal" />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="Localidad"></label> <input type="text" name="Localidad" placeholder="Localidad" />
-                            </td> 
-                            <td>
-                                <label for="Provincia"></label> <input type="text" name="Provincia" placeholder="Provincia" />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="País"></label> <input type="text" name="País" placeholder="País" />
-                            </td>
-                            <td><label for="Teléfono"></label> <input type="text" name="Teléfono" placeholder="Teléfono" />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="Email"></label> <input type="text" name="Email" placeholder="Email" />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="Enviar"></label> <input type="submit" name="Enviar" value="Enviar" />
-                            </td>
-                        </tr>
-                    </table>
-                </form>
+            <nav aria-label="breadcrumb">
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">CONTACTO</li>
+                </ul>
+            </nav>
+        </section>
+        <section class="row">
+            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-6 col-12">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeDXX21jTHPkG82eH5-7_ZY6fGHBQ6pf3iuoq6kbHgpblNAKQ/viewform?embedded=true" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
             </div>
-            <div class="mSectionText">
-                <h4>NOVO PLASTICOS esta a su disposición por consultas, información, pedidos, ofertas y mensajes en general.</h2>
-            </div>
+            <aside class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+                <div class="col">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item h3">CONTACTANOS</li>
+                        <li class="list-group-item">
+                            <h4><i class="fa-solid fa-location-dot"></i> DÓNDE ESTAMOS?</h4>
+                            <p>República de Cuba 337, Mar del Plata, Buenos Aires, Argentina <br>CP 7600</p>
+                        </li>
+                        <li class="list-group-item">
+                            <h4><i class="fa-solid fa-phone"></i> LÍNEA DIRECTA</h4> 
+                            <p>+5492235839259</p>
+                        </li>
+                        <li class="list-group-item">
+                            <h4><i class="fa-solid fa-circle-user"></i> NOVO EN REDES</h4>
+                            <ul class="text-black">
+                                <li><a href="https://www.facebook.com/novoplasticos/"><i class="fa fa-facebook" aria-hidden="true"></i></a>Facebook</li>
+                                <li><a href="https://www.instagram.com/novoservicios/"><i class="fa fa-instagram" aria-hidden="true"></i></a>Instagram</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            <aside>
         </section>
     </main>
     <hr>
-    <footer class="container">
+    <footer class="row">
         <div class="container-fluid">
             <div class="row">
-                <div class="col">
+                <div class="col-xl-4 col-lg-4 col-md-3 col-sm-6 col-12">
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item h2">UBICACION</li>
+                        <li class="list-group-item h2">UBICACIÓN</li>
                         <li class="list-group-item">Novo Plásticos S.A. | República de Cuba 337</li>
                         <li class="list-group-item">Mar Del Plata | Argentina</li>
                         <li class="list-group-item">Copyright 2022 | Todos los derechos reservados.</li>
                         <li class="list-group-item">novoplasticos.com</li>
                     </ul>
                 </div>
-                <div class="col">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item h2">HORARIOS DE ATENCION</li>
+                        <li class="list-group-item h2">HORARIOS DE ATENCIÓN</li>
                         <li class="list-group-item">Brindamos un asesoramiento constante, no dude en consultarnos.</li>
                         <li class="list-group-item">Lunes a Viernes: 9:00 a 17:00hs</li>
                         <li class="list-group-item">Sabados: 9:00 a 13:00hs</li>
                         <li class="list-group-item">Domingos: Cerrado</li>
                     </ul>
                 </div>
+                <div class="col-xl-4 col-lg-4 col-md-3 col-sm-6 col-12">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item h2">CONTÁCTENOS</li>
+                        <li class="list-group-item"><i class="fa-solid fa-mobile-screen"></i> +54 223 5714974</li>
+                        <li class="list-group-item"><i class="fa-solid fa-mobile-screen"></i> +54 223 3519259</li>
+                        <li class="list-group-item"><i class="fa-solid fa-envelope"></i> novoserviciosmdp@gmail.com</li>
+                        <li class="list-group-item"><i class="fa-solid fa-location-dot"></i> Mar del Plata, Buenos Aires, CP 7600</li>
+                    </ul>
+                </div>
             </div>
         </div>
+        <nav class="bg-secondary">
+            <div class="row">
+                <div class="align-self-end col-6">
+                    <p>Todos los derechos © 2022 NOVO Plásticos - Design by <a href="https://www.linkedin.com/in/gonzalo-ian-pelozo-776926162/" class="text-warning">Gonzalo Ian Pelozo</a></p>
+                </div>
+                <nav class="col-6 navbar navbar-expand-lg">
+                    <ul class="offset-lg-7 navbar-nav me-auto mb-2 mb-lg-0 fs-6">
+                        <li class="nav-item align-self-start"><a class="nav-link text-white" href="./Nosotros.html">Novo</a></li>
+                        <li class="nav-item align-self-start"><a class="nav-link text-white" href="./Productos.html">Productos</a></li>
+                        <li class="nav-item align-self-start"><a class="nav-link text-white" href="./Contacto.html">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="../index.html#rse">RSE</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </nav>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../js/loading.js"></script>
 </body>
 </html>

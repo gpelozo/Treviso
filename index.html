@@ -12,23 +12,32 @@
     <link rel="shorcut icon" href="./images/logos/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <script src="https://kit.fontawesome.com/63f5e2c2b0.js" crossorigin="anonymous"></script>
     <script src="./js/menu.js"></script>
 </head>
 <!--lo que se ve--> 
-<body class="container-fluid">
-    <header class="row">
-        <nav class="navbar navbar-expand-lg bg-success">
+<body class="hidden container-fluid">
+    <div class="centrado" id="onload">
+        <div class="loadingio-spinner-rolling-v9iovy66pyj">
+            <div class="ldio-46nhicw2h1x">
+            <div></div>
+            </div>
+        </div>
+    </div>
+    <header class="row sticky-top">
+        <nav class="navi navbar navbar-expand-lg bg-success">
             <div class="container-fluid">
 <!--logo-->
-                <div class="col-2 col-lg-2 animate__animated animate__fadeInDown">
+                <div class="col-2 col-lg-2 animate__animated animate__fadeInLeft">
                     <a class="navbar-brand" href="#"><img class="img-fluid w-50" src="./images/logos/logonovo.png" alt="NOVO PLASTICOS"></a>
                 </div>
 <!--boton hamburguesa-->
-                <button class="col-1 navbar-toggler animate__animated animate__fadeInRight" type="button" data-bs-toggle="collapse" data-bs-target="#menuHamburguesa" aria-controls="menuHamburguesa" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler animate__animated animate__fadeInRight" type="button" data-bs-toggle="collapse" data-bs-target="#menuHamburguesa" aria-controls="menuHamburguesa" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 <!--menu desplegable-->
-                <div class="offset-lg-3 collapse navbar-collapse align-self-end" id="menuHamburguesa">
+                <div class="offset-lg-2 offset-xl-3 offset-xxl-4 collapse navbar-collapse align-self-end" id="menuHamburguesa">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-4">
                         <li class="nav-item align-self-center">
                             <a class="nav-link active text-white" aria-current="page" href="#">Inicio</a>
@@ -58,44 +67,197 @@
             </div>
         </nav>
     </header>
-<hr>
+    <hr>
 <!--seccion principal-->
-    <main class="container containerM imgNovo animate__animated animate__fadeIn justify-Content-between">
-        <section class="mSection">
+    <main class="imgInterior animate__animated animate__fadeIn justify-Content-between">
+        <section class="row">
             <div class="mSectionText">
                 <h1 class="h2">NOVO PLASTICOS</h1>
             </div>
             <div class="mSectionText">
                 <p class="lead">Presentamos la nueva generación de cajones plásticos argentinos, reforzados para temperaturas extremas.</p>
             </div>
+        </section>
+        <section class="row">
+            <div id="carouselExampleIndicators" class="col-12 carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" id="rse"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./images/fabrica/testimo1.jpeg" class="d-block w-100" alt="Cajon Alto">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Cajon Alto</h5>
+                        <p>Cajón plástico para pescados.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/fabrica/testimo2.jpeg" class="d-block w-100" alt="Cunita Ventilada">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Producción Sustentable</h5>
+                        <p>Compromiso con la economía circular.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/fabrica/testimo3.jpeg" class="d-block w-100" alt="caja">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Variedad de Productos</h5>
+                        <p>Para recolección de agriculturas, avícolas, frutícolas.</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <section class="row">
+            <iframe width="100vw" height="500" src="https://www.youtube.com/embed/aCcPT61GbzE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+        <section class="bg-secondary">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-8 col-md-8 col-lg-10">
+                        <p class="text-white h3">¿Necesita organizar su empresa o negocio?</p>
+                        <p>Puede consultarnos en forma directa, un asesor se pondrá en contacto.</p>
+                    </div>
+                    <div class="col-2 col-sm-1 align-self-center">
+                        <button type="button" class="btn btn-lg btn-success"><a class="nav-link text-white" href="./paginas/Contacto.html">Consulta</a></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!--La RSE -->
+        <section class="row">
+            <img src="assets/images/service/bgtoprse.jpg" alt="">
+            <div class="position-center">
+                <div class="mSectionText">
+                    <h1>Responsabilidad Social Empresarial</h1>
+                </div>
+                <nav aria-label="breadcrumb">
+                    <ul class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">RSE2019</li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+        <section class="row about-us">
+            <div class="container">
+                <div class="about-us-content">
+                    <div class="row">
+                        <div class="mSectionText col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 about-us-info">
+                            <div class="h2">¿Que es la RSE?</div>
+                            <p> La Responsabilidad Social Empresarial (RSE), también conocida como Responsabilidad Social Corporativa (RSC), se define como el reflejo de la manera en que las empresas toman conciencia y evalúan el impacto que tienen sus actividades sobre la sociedad, y en la que afirman los principios y valores por los que se rigen, tanto en sus propios métodos como en los procesos internos.</p>
+                            <p> Se desarrolla de forma voluntaria ya que solo depende de la misma organización y con el tiempo se ha convertido en un eje central de las actividades cotidianas en las empresas. </p>
+                            <p> A continuación detallamos los 4 procesos clave que desarrollamos en NOVO PLASTICOS sobre la RSE.</p>                         
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!-- Servicios -->
+        <section>
+            <div class="row">
+                <div class="services-content services-pages-content">
+                    <div class="row">
+                        <article class="col-xl-3 col-lg-6 col-md-6 col-sm-12 item">
+                            <div class="containerServicio c1">
+                                <img src="./images/rse/rseproceso1.jpeg" alt="proceso1" class="rounded image">
+                                <div class="overlay">
+                                    <div class="text"><p>1. CAJONES SIN USO<br>Todos los clientes que así lo deseen  nos traen los productos fuera de uso o quebrados después de que cumplieron su largo ciclo en la actividad requerida.</p></div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="col-xl-3 col-lg-6 col-md-6 col-sm-12 item">
+                            <div class="containerServicio c2">
+                                <img src="./images/rse/rseproceso2.jpeg" alt="proceso2" class="rounded image">
+                                <div class="overlay">
+                                    <div class="text"><p>2. RECICLADO<br>Realizamos un acopio de los mismos hasta obtener la cantidad adecuada para realizar el proceso de picado mediante nuestro molino.</p></div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="col-xl-3 col-lg-6 col-md-6 col-sm-12 item">
+                            <div class="containerServicio c3">
+                                <img src="./images/rse/rseproceso3.jpeg" alt="proceso3" class="rounded image">
+                                <div class="overlay">
+                                    <div class="text"><p>3. NUEVA INYECCIÓN <br>La molienda obtenido sera reutilizada con el fin de volver a inyectar nuevos cajones, obteniendo asi un nuevo producto de calidad para utilizar en el mercado.</p></div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="col-xl-3 col-lg-6 col-md-6 col-sm-12 item">
+                            <div class="containerServicio c4">
+                                <img src="./images/rse/rseproceso4.jpeg" alt="proceso4" class="rounded image">
+                                <div class="overlay">
+                                    <div class="text"><p>4. VUELTA A SU USO <br>Con la ayuda de nuestros clientes y el trabajo de nuestros operarios es que se ha reutilizado el material plástico para ser usado nuevamente.</p></div>
+                                </div>
+                            </div>
+                        </article>
+                        <a href="https://www.facebook.com/novoplasticos/" class=" fa fa-facebook">Ver más en Facebook</a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <hr>
 <!--pie de pagina , cambió en bootstrap-->
-<footer class="container">
+<footer class="row">
     <div class="container-fluid">
         <div class="row">
-            <div class="col">
+            <div class="col-xl-4 col-lg-4 col-md-3 col-sm-6 col-12">
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item h2">UBICACION</li>
+                    <li class="list-group-item h2">UBICACIÓN</li>
                     <li class="list-group-item">Novo Plásticos S.A. | República de Cuba 337</li>
                     <li class="list-group-item">Mar Del Plata | Argentina</li>
                     <li class="list-group-item">Copyright 2022 | Todos los derechos reservados.</li>
                     <li class="list-group-item">novoplasticos.com</li>
                 </ul>
             </div>
-            <div class="col">
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item h2">HORARIOS DE ATENCION</li>
+                    <li class="list-group-item h2">HORARIOS DE ATENCIÓN</li>
                     <li class="list-group-item">Brindamos un asesoramiento constante, no dude en consultarnos.</li>
                     <li class="list-group-item">Lunes a Viernes: 9:00 a 17:00hs</li>
                     <li class="list-group-item">Sabados: 9:00 a 13:00hs</li>
                     <li class="list-group-item">Domingos: Cerrado</li>
                 </ul>
             </div>
+            <div class="col-xl-4 col-lg-4 col-md-3 col-sm-6 col-12">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item h2">CONTÁCTENOS</li>
+                    <li class="list-group-item"><i class="fa-solid fa-mobile-screen"></i> +54 223 5714974</li>
+                    <li class="list-group-item"><i class="fa-solid fa-mobile-screen"></i> +54 223 3519259</li>
+                    <li class="list-group-item"><i class="fa-solid fa-envelope"></i> novoserviciosmdp@gmail.com</li>
+                    <li class="list-group-item"><i class="fa-solid fa-location-dot"></i> Mar del Plata, Buenos Aires, CP 7600</li>
+                </ul>
+            </div>
         </div>
     </div>
+    <nav class="bg-secondary">
+        <div class="row">
+            <div class="align-self-center col-6">
+                Todos los derechos © 2022 NOVO Plásticos - Design by <a href="https://www.linkedin.com/in/gonzalo-ian-pelozo-776926162/" class="text-warning">Gonzalo Ian Pelozo</a>
+            </div>
+            <nav class="col-6 navbar navbar-expand-lg">
+                <ul class="offset-lg-7 navbar-nav me-auto mb-2 mb-lg-0 fs-6">
+                    <li class="nav-item align-self-start"><a class="nav-link text-white" href="./paginas/Nosotros.html">Novo</a></li>
+                    <li class="nav-item align-self-start"><a class="nav-link text-white" href="./paginas/Productos.html">Productos</a></li>
+                    <li class="nav-item align-self-start"><a class="nav-link text-white" href="./paginas/Contacto.html">Contacto</a></li>
+                    <li class="nav-item align-self-start"><a class="nav-link text-white" href="#rse">RSE</a></li>
+                </ul>
+            </nav>
+        </div>
+    </nav>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="./js/loading.js"></script>
 </body>
 </html>
